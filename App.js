@@ -4,6 +4,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
 import HomeScreen from './HomeScreen';
 import DetailsScreen from './DetailScreen';
+import AddReviewScreen from './AddReviewScreen';
 
 const Stack = createNativeStackNavigator();
 
@@ -21,6 +22,11 @@ export default function App() {
           name="Details" 
           component={DetailsScreen} 
           options={{ title: 'Establishment Details' }} 
+        />
+        <Stack.Screen 
+            name="AddReview" 
+            component={AddReviewScreen} 
+            options={{ title: 'Write a Review' }} 
         />
       </Stack.Navigator>
     </NavigationContainer>
